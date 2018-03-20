@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estouaprendendo Android"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/chkEstouAprendendo"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/rdgOpcoes">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbOpcao1"
+            android:text="@string/op_o_1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbOpcao2"
+            android:text="@string/op_o_2"/>
+
+        <RadioButton
+            android:layout_wid  th="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbOpcao3"
+            android:text="@string/op_o_3"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/op_o_selecionada"
+        android:layout_below="@id/rdgOpcoes"
+        android:onClick="mostrarDados"/>
+
+
+
+</RelativeLayout>
